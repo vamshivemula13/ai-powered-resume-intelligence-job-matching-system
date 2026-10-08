@@ -1,0 +1,58 @@
+{
+  "categories": {
+    "Programming Languages": [
+      {"canonical": "Python", "aliases": ["python3", "py"]},
+      {"canonical": "Java", "aliases": ["core java", "java 8", "java 11", "java 17", "java 21"]},
+      {"canonical": "C", "aliases": ["c lang", "ansi c"], "exact_boundary": true, "case_sensitive": true},
+      {"canonical": "C++", "aliases": ["cpp", "c plus plus"]},
+      {"canonical": "JavaScript", "aliases": ["js", "ecmascript"]},
+      {"canonical": "TypeScript", "aliases": ["ts"]},
+      {"canonical": "Go", "aliases": ["golang"], "exact_boundary": true},
+      {"canonical": "Rust", "aliases": ["rust-lang"], "exact_boundary": true},
+      {"canonical": "SQL", "aliases": ["structured query language"], "exact_boundary": true}
+    ],
+    "Backend": [
+      {"canonical": "FastAPI", "aliases": ["fast api"]},
+      {"canonical": "Django", "aliases": ["django rest framework", "drf"]},
+      {"canonical": "Flask", "aliases": []},
+      {"canonical": "REST API", "aliases": ["restful api", "rest apis", "restful apis", "rest api development"]},
+      {"canonical": "GraphQL", "aliases": ["graphql api"]},
+      {"canonical": "Microservices", "aliases": ["microservice", "microservices architecture"]},
+      {"canonical": "Celery", "aliases": []},
+      {"canonical": "Kafka", "aliases": ["apache kafka"]},
+      {"canonical": "RabbitMQ", "aliases": []}
+    ],
+    "Database": [
+      {"canonical": "PostgreSQL", "aliases": ["postgres", "postgresql", "psql"]},
+      {"canonical": "MySQL", "aliases": []},
+      {"canonical": "MongoDB", "aliases": ["mongo"]},
+      {"canonical": "Redis", "aliases": []},
+      {"canonical": "SQLite", "aliases": ["sqlite3"]},
+      {"canonical": "Elasticsearch", "aliases": ["elastic search", "elk"]}
+    ],
+    "Cloud": [
+      {"canonical": "AWS", "aliases": ["amazon web services", "amazon aws", "aws cloud"], "exact_boundary": true},
+      {"canonical": "Azure", "aliases": ["microsoft azure", "azure cloud"]},
+      {"canonical": "GCP", "aliases": ["google cloud", "google cloud platform", "gcp cloud"], "exact_boundary": true}
+    ],
+    "DevOps": [
+      {"canonical": "Docker", "aliases": ["dockerfile", "docker-compose", "containerization"]},
+      {"canonical": "Kubernetes", "aliases": ["k8s", "kube"]},
+      {"canonical": "CI/CD", "aliases": ["continuous integration", "continuous deployment", "ci/cd pipeline", "ci cd"]},
+      {"canonical": "GitHub Actions", "aliases": ["gh actions", "github action"]},
+      {"canonical": "Terraform", "aliases": ["hashicorp terraform"]},
+      {"canonical": "Linux", "aliases": ["unix", "ubuntu", "bash", "shell scripting"]},
+      {"canonical": "Git", "aliases": ["version control", "github", "gitlab"], "exact_boundary": true}
+    ],
+    "AI/ML": [
+      {"canonical": "Machine Learning", "aliases": ["ml"]},
+      {"canonical": "NLP", "aliases": ["natural language processing"], "exact_boundary": true},
+      {"canonical": "Scikit-learn", "aliases": ["sklearn", "scikit learn"]},
+      {"canonical": "PyTorch", "aliases": ["torch"]},
+      {"canonical": "TensorFlow", "aliases": ["tf", "tensor flow"]},
+      {"canonical": "Pandas", "aliases": []},
+      {"canonical": "NumPy", "aliases": ["numpy"]},
+      {"canonical": "Sentence Transformers", "aliases": ["sentence-transformers", "embeddings", "vector embeddings", "sentence bert", "sbert"]}
+    ]
+  }
+}

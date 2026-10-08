@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-intelligence-system"
+version = "0.1.0"
+description = "AI-Powered Recruitment Intelligence & Job Matching System"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Engineering Team", email = "engineering@resume-intelligence.local" }
+]
+keywords = [
+    "resume-parser",
+    "job-matching",
+    "ats",
+    "nlp",
+    "sentence-transformers",
+    "fastapi",
+    "embeddings",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: FastAPI",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B", "C4"]
+ignore = ["E501", "B008"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"

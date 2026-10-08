@@ -1,0 +1,6 @@
+{
+  "name": "AI-Powered Resume Intelligence & Job Matching System",
+  "description": "Enterprise-grade AI recruitment intelligence system analyzing candidate resumes, skill gaps, semantic compatibility, and ATS score matching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,32 @@
+Alex Mercer
+alex.mercer@example.com | (555) 345-6789 | San Francisco, CA
+https://linkedin.com/in/alex-mercer | https://github.com/alexmercer
+
+PROFESSIONAL SUMMARY
+Senior Backend Engineer with 5+ years of experience designing scalable distributed architectures using Python, FastAPI, and PostgreSQL. Proven track record optimizing asynchronous services and deploying containerized applications.
+
+TECHNICAL SKILLS
+Languages: Python, Go, SQL, Bash
+Backend & APIs: FastAPI, Django, REST API, Microservices, Celery
+Databases & Caching: PostgreSQL, Redis, MongoDB
+DevOps & Cloud: Docker, Kubernetes, AWS, CI/CD, Linux, Git
+
+WORK EXPERIENCE
+Senior Backend Engineer | Apex Cloud Solutions
+2021 - Present
+* Architected high-throughput async REST API microservices using FastAPI and PostgreSQL handling 25M daily transactions.
+* Improved database query latency by 40% through indexing, partitioning, and Redis caching layers.
+* Containerized core services with Docker and orchestrated deployment onto AWS Kubernetes clusters.
+
+Backend Developer | Nexus Systems
+2019 - 2021
+* Developed backend web services using Python, Flask, and PostgreSQL.
+* Automated integration test workflows with GitHub Actions CI/CD pipelines.
+
+EDUCATION
+Bachelor of Science in Computer Science
+State University of California | 2019
+
+PROJECTS
+* Distributed Task Queue: Open-source asynchronous task processor built with Python and Redis.
+* High-Speed Search Engine: Inverted index retrieval system developed in Go and PostgreSQL.
