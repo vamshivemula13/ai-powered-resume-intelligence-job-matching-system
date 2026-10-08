@@ -158,24 +158,3 @@ Open interactive Swagger UI: **`http://localhost:8000/docs`**
 
 ---
 
-## 🎓 Technical Interview Defense Guide (Phase 24)
-
-### Python OOP & Architecture
-* **Q: Why did you use an Abstract Base Class (`BasePDFExtractor`) with `@abstractmethod`?**  
-  *Answer:* Adheres to the **Dependency Inversion Principle** (SOLID). Business logic depends on the abstraction rather than the concrete extraction tool (PyMuPDF). When scanned PDFs arrive, we can plug in an `OCRExtractor(BasePDFExtractor)` without touching downstream parsing or scoring services.
-
-### FastAPI & Concurrency
-* **Q: Why use `async/await` with FastAPI and `aiosqlite`/`asyncpg`?**  
-  *Answer:* I/O operations (database queries, network requests) release Python's Global Interpreter Lock (GIL). An asynchronous event loop can handle thousands of concurrent requests without blocking worker threads.
-
-### Database Architecture
-* **Q: Why use normalized tables and the Repository Pattern?**  
-  *Answer:* Normalization prevents data duplication (e.g. skills are stored once in `skills` table and linked via association tables `candidate_skills` and `job_skills`). The Repository Pattern decouples database queries from route handlers, making business logic easy to unit-test with in-memory SQLite fixtures.
-
-### NLP & Vector Embeddings
-* **Q: What is Cosine Similarity and why use Sentence Transformers?**  
-  *Answer:* Cosine similarity measures the angle between dense vector representations in 384-dimensional space: $\frac{A \cdot B}{\|A\| \|B\|}$. Unlike keyword matching, it captures semantic equivalence (e.g. *"engineered REST APIs"* is conceptually close to *"developed backend services"*).
-
-### System Scalability
-* **Q: What happens if 10,000 resumes arrive simultaneously?**  
-  *Answer:* We offload heavy PDF extraction and transformer inference to a distributed task queue (Celery or ARQ with Redis). The API immediately responds with `202 Accepted` and a `job_id`, while worker nodes process the files asynchronously and write results to PostgreSQL.
