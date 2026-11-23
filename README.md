@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Resume Intelligence & Job Matching System
+🤖 AI-Powered Resume Intelligence & Job Matching System
 
 An enterprise-grade recruitment intelligence and candidate-job matching engine built in **Python 3.10+ / 3.12**, powered by **FastAPI**, **PyMuPDF**, **SQLAlchemy 2.0 Async**, **spaCy**, and **Sentence Transformers**.
 
